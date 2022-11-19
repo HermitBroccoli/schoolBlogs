@@ -1,7 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import render, redirect
 
-def about(request):
-    return HttpResponse('This is about page')
-
-def home(request):
-    return HttpResponse('This is about page')
+def main(request):
+    return render(request, 'base.html')
